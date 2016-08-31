@@ -26,30 +26,35 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupWindowAnimations() {
-        // Re-enter transition is executed when returning to this activity
+        // 设置MainActivity的transition方式
         Slide slideTransition = new Slide();
         slideTransition.setSlideEdge(Gravity.LEFT);
         slideTransition.setDuration(getResources().getInteger(R.integer.anim_duration_long));
+        // 执行过渡方式
         getWindow().setReenterTransition(slideTransition);
         getWindow().setExitTransition(slideTransition);
     }
 
     private void setupSamples() {
+        //布局文件
         samples = Arrays.asList(
-                new Sample(ContextCompat.getColor(this, R.color.sample_red), "Transitions"),
-                new Sample(ContextCompat.getColor(this, R.color.sample_blue), "Shared Elements"),
-                new Sample(ContextCompat.getColor(this, R.color.sample_green), "View animations"),
-                new Sample(ContextCompat.getColor(this, R.color.sample_yellow), "Circular Reveal Animation")
+                new Sample(ContextCompat.getColor(this, R.color.sample_red), "过渡"),
+                new Sample(ContextCompat.getColor(this, R.color.sample_blue), "共享的元素"),
+                new Sample(ContextCompat.getColor(this, R.color.sample_green), "视图动画"),
+                new Sample(ContextCompat.getColor(this, R.color.sample_yellow), "圆形演示动画")
         );
     }
 
     private void setupToolbar() {
+        //导航栏设置
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        //getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 
     private void setupLayout() {
+        //RecyclerView布局设置
+        //活动的跳转
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.sample_list);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

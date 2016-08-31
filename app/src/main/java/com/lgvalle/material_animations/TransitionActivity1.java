@@ -9,6 +9,9 @@ import android.transition.Visibility;
 import android.view.View;
 
 import com.lgvalle.material_animations.databinding.ActivityTransition1Binding;
+/**
+ *活动Transitions
+ */
 
 public class TransitionActivity1 extends BaseDetailActivity {
     private Sample sample;

@@ -34,7 +34,8 @@
 
         <TextView
             style="@style/MaterialAnimations.Text.Body"
-            android:text="This activity defines a Explode Enter Transition programmatically. Transitions can be defined either on code or on xml resource files" />
+            android:text="本次活动用编程的方法定义了一个爆炸(上下渐隐式)的过渡。
+            过渡可以在代码或XML的资源文件中定义" />
 
 
         <LinearLayout

@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import java.io.Serializable;
 
 /**
- * Created by lgvalle on 04/09/15.
+ *显示recycle中内容的类(继承序列化)
  */
 public class Sample implements Serializable {
 
