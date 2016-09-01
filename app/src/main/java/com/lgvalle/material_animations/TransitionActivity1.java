@@ -24,7 +24,7 @@ public class TransitionActivity1 extends BaseDetailActivity {
         setupLayout();
         setupToolbar();
     }
-
+//给活动添加布局
     private void bindData() {
         ActivityTransition1Binding binding = DataBindingUtil.setContentView(this, R.layout.activity_transition1);
         sample = (Sample) getIntent().getExtras().getSerializable(EXTRA_SAMPLE);
@@ -98,15 +98,15 @@ public class TransitionActivity1 extends BaseDetailActivity {
             }
         });
     }
-
+//fade类型animation效果
     private Visibility buildEnterTransition() {
         Fade enterTransition = new Fade();
         enterTransition.setDuration(getResources().getInteger(R.integer.anim_duration_long));
-        // This view will not be affected by enter transition animation
+        // 这个视图将不会受到进入的过渡动画影响
         enterTransition.excludeTarget(R.id.square_red, true);
         return enterTransition;
     }
-
+//slide类型animation效果
     private Visibility buildReturnTransition() {
         Visibility enterTransition = new Slide();
         enterTransition.setDuration(getResources().getInteger(R.integer.anim_duration_long));

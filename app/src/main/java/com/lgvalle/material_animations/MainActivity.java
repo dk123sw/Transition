@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         //导航栏设置
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 
     private void setupLayout() {
