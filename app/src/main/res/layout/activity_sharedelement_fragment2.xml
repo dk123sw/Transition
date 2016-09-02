@@ -19,7 +19,7 @@
         android:layout_gravity="center_vertical|center_horizontal"
         android:layout_toEndOf="@+id/square_blue"
         android:gravity="center_horizontal|center_vertical"
-        android:text="Fragment 2" />
+        android:text="框架 2" />
 
 
     <TextView
@@ -27,19 +27,19 @@
         style="@style/MaterialAnimations.Text.Body"
         android:layout_below="@+id/square_blue"
         android:layout_centerHorizontal="true"
-        android:text="Blue circle is a shared element between two fragments" />
+        android:text="蓝色的圆是俩个框架的共享元素" />
 
     <TextView
         android:id="@+id/fragment2_title"
         style="@style/MaterialAnimations.Text.Body"
         android:textStyle="bold"
         android:layout_below="@+id/fragment2_body1"
-        android:text="Overlap" />
+        android:text="Overlap(交叠)" />
 
     <TextView
         style="@style/MaterialAnimations.Text.Body"
         android:layout_below="@+id/fragment2_title"
         android:layout_centerHorizontal="true"
-        android:text="When true, the enter transition will start as soon as possible. When false, the enter transition will wait until the exit transition completes before starting." />
+        android:text="使用交叠时，进、出动画同时进行。不使用时，框架1先进行出动画，框架2再进行入动画。" />
 
 </RelativeLayout>

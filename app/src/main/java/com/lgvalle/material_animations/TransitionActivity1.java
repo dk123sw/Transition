@@ -91,8 +91,7 @@ public class TransitionActivity1 extends BaseDetailActivity {
             @Override
             public void onClick(View v) {
                 /**
-                 * If no return transition is defined Android will use reversed enter transition
-                 * In this case, return transition will be a reversed Slide (defined in buildEnterTransition)
+                 * 如果不返回一个明确的过渡动画，android将会使用默认的过渡方式(buildEnterTransition)
                  */
                 finishAfterTransition();
             }

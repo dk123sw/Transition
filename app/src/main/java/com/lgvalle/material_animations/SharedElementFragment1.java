@@ -11,9 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-/**
- * Created by lgvalle on 05/09/15.
- */
+
 public class SharedElementFragment1 extends Fragment {
 
     private static final String EXTRA_SAMPLE = "sample";
@@ -21,9 +19,10 @@ public class SharedElementFragment1 extends Fragment {
     public static SharedElementFragment1 newInstance(Sample sample) {
 
         Bundle args = new Bundle();
-
+//      将键值对参数传给args
         args.putSerializable(EXTRA_SAMPLE, sample);
         SharedElementFragment1 fragment = new SharedElementFragment1();
+//        这里提供的参数(args)将在片段破坏和创造时被保留
         fragment.setArguments(args);
         return fragment;
     }
@@ -34,6 +33,7 @@ public class SharedElementFragment1 extends Fragment {
         final Sample sample = (Sample) getArguments().getSerializable(EXTRA_SAMPLE);
 
         final ImageView squareBlue = (ImageView) view.findViewById(R.id.square_blue);
+//        添加了一个图形第一个参数用于添加图形第二个参数添加颜色
         DrawableCompat.setTint(squareBlue.getDrawable(), sample.color);
 
         view.findViewById(R.id.sample2_button1).setOnClickListener(new View.OnClickListener() {

@@ -14,11 +14,11 @@
         style="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment 1" />
+        android:text="框架 1" />
 
     <TextView
         style="@style/MaterialAnimations.Text.Body"
-        android:text="Blue circle is a shared element between MainActivity and this fragment." />
+        android:text="这个蓝色的圆是MainActiity和框架1的共享元素" />
 
 
     <Button

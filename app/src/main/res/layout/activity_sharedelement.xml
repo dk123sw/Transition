@@ -34,7 +34,7 @@
 
         <TextView
             style="@style/MaterialAnimations.Text.Body"
-            android:text="Toolbar title is a shared element between MainActivity and this activity" />
+            android:text="Toolbar title 是MainActivity和这个界面的共享元素 " />
 
         <FrameLayout
             android:id="@+id/sample2_content"
