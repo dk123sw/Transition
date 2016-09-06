@@ -64,7 +64,8 @@ public class RevealActivity extends BaseDetailActivity implements View.OnTouchLi
 
             @Override
             public void onTransitionEnd(Transition transition) {
-                // Removing listener here is very important because shared element transition is executed again backwards on exit. If we don't remove the listener this code will be triggered again.
+                // Removing listener here is very important because shared element transition is executed again
+                // backwards on exit. If we don't remove the listener this code will be triggered again.
                 transition.removeListener(this);
                 hideTarget();
                 animateRevealShow(toolbar);
@@ -188,7 +189,8 @@ public class RevealActivity extends BaseDetailActivity implements View.OnTouchLi
             }
         });
         TransitionManager.beginDelayedTransition(bgViewGroup, transition);
-        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT);
         layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
         btnRed.setLayoutParams(layoutParams);
     }
@@ -209,6 +211,8 @@ public class RevealActivity extends BaseDetailActivity implements View.OnTouchLi
         findViewById(R.id.shared_target).setVisibility(View.GONE);
     }
 
+//  这个类让圆出现的时候每个圆之间有一个延迟，并且interpolator这个参数让圆出现时大小是原圆的0.8倍之后
+//  变为原大小
     private void animateButtonsIn() {
         for (int i = 0; i < bgViewGroup.getChildCount(); i++) {
             View child = bgViewGroup.getChildAt(i);
@@ -247,10 +251,11 @@ public class RevealActivity extends BaseDetailActivity implements View.OnTouchLi
         int cx = (viewRoot.getLeft() + viewRoot.getRight()) / 2;
         int cy = (viewRoot.getTop() + viewRoot.getBottom()) / 2;
         int finalRadius = Math.max(viewRoot.getWidth(), viewRoot.getHeight());
-
+//      ViewAnimationUtils.createCircularReveal 返回一个能对圆进行裁剪的Animator类型动画
         Animator anim = ViewAnimationUtils.createCircularReveal(viewRoot, cx, cy, 0, finalRadius);
         viewRoot.setVisibility(View.VISIBLE);
         anim.setDuration(getResources().getInteger(R.integer.anim_duration_long));
+//        AccelerateInterpolator让动画开始时减速之后加速
         anim.setInterpolator(new AccelerateInterpolator());
         anim.start();
     }

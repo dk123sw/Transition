@@ -111,6 +111,7 @@ public class AnimationsActivity2 extends BaseDetailActivity {
             }
         });
         View button2 = findViewById(R.id.sample3_button2);
+//        利用TransitionManager.go方法设置视图和视图变换时的动画
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

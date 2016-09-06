@@ -66,7 +66,7 @@ public class AnimationsActivity1 extends BaseDetailActivity {
         });
     }
 
-    private void changeLayout() {
+    private void    changeLayout() {
         TransitionManager.beginDelayedTransition(viewRoot);
 
         ViewGroup.LayoutParams params = square.getLayoutParams();

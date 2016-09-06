@@ -59,7 +59,7 @@
             <TextView
                 android:id="@+id/sample_body"
                 style="@style/MaterialAnimations.Text.Body"
-                android:text="Sample Activity demonstrating how to create different CirculaReveal animations" />
+                android:text="示例活动演示如何创建不同的圆形显示动画" />
 
 
             <ImageView

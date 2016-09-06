@@ -51,13 +51,13 @@
                     android:id="@+id/sample3_button1"
                     style="@style/MaterialAnimations.Button.Scaled"
                     android:layout_weight="1"
-                    android:text="Scene one" />
+                    android:text="场景一" />
 
                 <Button
                     android:id="@+id/sample3_button2"
                     style="@style/MaterialAnimations.Button.Scaled"
                     android:layout_weight="1"
-                    android:text="Scene two" />
+                    android:text="场景二" />
             </LinearLayout>
 
             <LinearLayout
@@ -68,13 +68,13 @@
                     android:id="@+id/sample3_button3"
                     style="@style/MaterialAnimations.Button.Scaled"
                     android:layout_weight="1"
-                    android:text="Scene three" />
+                    android:text="场景三" />
 
                 <Button
                     android:id="@+id/sample3_button4"
                     style="@style/MaterialAnimations.Button.Scaled"
                     android:layout_weight="1"
-                    android:text="Scene four" />
+                    android:text="场景四" />
             </LinearLayout>
         </LinearLayout>
 
