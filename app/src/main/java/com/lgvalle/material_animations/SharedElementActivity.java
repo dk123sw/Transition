@@ -8,6 +8,10 @@ import android.view.Gravity;
 
 import com.lgvalle.material_animations.databinding.ActivitySharedelementBinding;
 
+/**
+ *
+ */
+
 public class SharedElementActivity extends BaseDetailActivity {
 
 
@@ -27,7 +31,7 @@ public class SharedElementActivity extends BaseDetailActivity {
     }
 
     private void setupWindowAnimations() {
-        // We are not interested in defining a new Enter Transition. Instead we change default transition duration
+        // 使用默认的过渡方式，改变了过渡的用时
         getWindow().getEnterTransition().setDuration(getResources().getInteger(R.integer.anim_duration_long));
     }
 

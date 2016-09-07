@@ -9,6 +9,7 @@ import java.io.Serializable;
 
 /**
  *显示recycle中内容的类(继承序列化)
+ *序列化给我们提供了一种技术，用于保存对象的变量以便于传输(IPC)
  */
 public class Sample implements Serializable {
 

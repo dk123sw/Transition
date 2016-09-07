@@ -53,7 +53,7 @@ public class RevealActivity extends BaseDetailActivity implements View.OnTouchLi
         setupEnterAnimations();
         setupExitAnimations();
     }
-
+//  从MainActivity进入RevealActivity时的动画
     private void setupEnterAnimations() {
         Transition transition = TransitionInflater.from(this).inflateTransition(R.transition.changebounds_with_arcmotion);
         getWindow().setSharedElementEnterTransition(transition);
@@ -64,8 +64,8 @@ public class RevealActivity extends BaseDetailActivity implements View.OnTouchLi
 
             @Override
             public void onTransitionEnd(Transition transition) {
-                // Removing listener here is very important because shared element transition is executed again
-                // backwards on exit. If we don't remove the listener this code will be triggered again.
+// Removing listener here is very important because shared element transition is executed again
+ // backwards on exit. If we don't remove the listener this code will be triggered again.
                 transition.removeListener(this);
                 hideTarget();
                 animateRevealShow(toolbar);

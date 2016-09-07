@@ -49,7 +49,7 @@
 
         <TextView
             style="@style/MaterialAnimations.Text.Body"
-            android:text="Sample Activity demonstrating how to use TransitionManager to animate different view properties" />
+            android:text="用一个样式活动演示如何使用TransitionManager做不同的视图属性" />
 
 
         <LinearLayout

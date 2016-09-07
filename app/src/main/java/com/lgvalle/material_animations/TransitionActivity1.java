@@ -83,7 +83,7 @@ public class TransitionActivity1 extends BaseDetailActivity {
             public void onClick(View v) {
                 Visibility returnTransition = buildReturnTransition();
                 getWindow().setReturnTransition(returnTransition);
-
+//      在代码中触发通过finishAfterTransition()方法触发返回动画，而不是调用finish()方法。
                 finishAfterTransition();
             }
         });

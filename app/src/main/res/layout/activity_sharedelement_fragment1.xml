@@ -23,12 +23,12 @@
 
     <Button
         android:id="@+id/sample2_button1"
-        android:text="Next (Overlap transition = false)"
+        android:text="Next (不使用交叠过渡)"
         style="@style/MaterialAnimations.Button" />
 
     <Button
         android:id="@+id/sample2_button2"
-        android:text="Next (Overlap transition =  true)"
+        android:text="Next (使用交叠过渡)"
         style="@style/MaterialAnimations.Button" />
 
 </LinearLayout>

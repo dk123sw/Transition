@@ -48,15 +48,15 @@
 
         <TextView
             style="@style/MaterialAnimations.Text.Body"
-            android:text="@string/medium_text" />
+            android:text="@string/medium_text2" />
 
         <Button
             android:id="@+id/exit_button"
             android:text="Exit"
-            style="@style/MaterialAnimations.Button" />
-
-
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_normal"
+            />
 
     </LinearLayout>
 </layout>

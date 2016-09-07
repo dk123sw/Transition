@@ -11,9 +11,10 @@
 
     <string name="sample_blue_title">sample_blue_title</string>
     <string name="long_text">Bacon ipsum dolor amet cupidatat bresaola minim, aliquip beef aute ea porchetta. Meatball brisket do, rump in beef ea ham hock spare ribs mollit qui dolore ipsum voluptate cow. Drumstick prosciutto salami duis jerky jowl. Mollit ball tip short ribs doner fugiat frankfurter leberkas andouille kevin pork loin nostrud ham culpa. Rump pariatur ham hock excepteur picanha pork. Corned beef flank proident shankle rump.</string>
-    <string name="medium_text">原文是各种吃的看着都饿。。。Explode(xml)用到参数interpolator产生效果，Slide(xml)用到slideEdge变成上下滑动</string>
-    <string name="reveal_body1">Circular Reveal Animation starting from the center of target view</string>
-    <string name="reveal_body2">Circular Reveal Animation starting from touch coordinates</string>
-    <string name="reveal_body3">View layout change animation with Circular Reveal Animation on finish</string>
-    <string name="reveal_body4">Circular Reveal Animation from top with nested animations on end</string>
+    <string name="medium_text1">原文是各种吃的看着都饿。。。Explode(xml)用到参数interpolator产生效果</string>
+    <string name="medium_text2">原文是各种吃的看着都饿。。。Slide(xml)用到slideEdge变成上下滑动</string>
+    <string name="reveal_body1">通知显示动画从目标视图的中心开始</string>
+    <string name="reveal_body2">通知显示动画从接触坐标(从屏幕底部)开始</string>
+    <string name="reveal_body3">通知显示动画从fragment中心开始</string>
+    <string name="reveal_body4">通知显示从最上面的中间开始 利用不同的方式让下方小球出现</string>
 </resources>

@@ -33,7 +33,8 @@ public class SharedElementFragment1 extends Fragment {
         final Sample sample = (Sample) getArguments().getSerializable(EXTRA_SAMPLE);
 
         final ImageView squareBlue = (ImageView) view.findViewById(R.id.square_blue);
-//        添加了一个图形第一个参数用于添加图形第二个参数添加颜色
+//        添加了一个图形
+//        第一个参数添加图形，第二个参数添加颜色
         DrawableCompat.setTint(squareBlue.getDrawable(), sample.color);
 
         view.findViewById(R.id.sample2_button1).setOnClickListener(new View.OnClickListener() {

@@ -12,6 +12,11 @@ import android.view.Gravity;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ *进入apk的界面所在的活动
+ *主要的布局是利用RecyclerView和Data Binding完成的
+ */
+
 public class MainActivity extends AppCompatActivity {
     private List<Sample> samples;
 

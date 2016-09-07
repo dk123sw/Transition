@@ -7,6 +7,6 @@
     <TextView
         android:id="@+id/scene0_title"
         style="@style/MaterialAnimations.Text.Body"
-        android:text="Scenes store the state of a view hierarchy, including all its views and their property values. The transitions framework can run animations between a starting and an ending scene" />
+        android:text="场景存储视图层次的状态，包括其所有的观点和他们的属性值的状态。过渡框架可以在一个开始和结束场景运行动画。" />
 
 </LinearLayout>

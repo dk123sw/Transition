@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|start"
-                android:text="Scenes" />
+                android:text="场景" />
 
         </android.support.v7.widget.Toolbar>
 

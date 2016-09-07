@@ -6,6 +6,9 @@ import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+/**
+ * 主要用途是类setupToolbar设置状态栏
+ */
 
 
 public class BaseDetailActivity extends AppCompatActivity {

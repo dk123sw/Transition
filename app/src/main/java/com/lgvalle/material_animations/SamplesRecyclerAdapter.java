@@ -14,6 +14,10 @@ import com.lgvalle.material_animations.databinding.RowSampleBinding;
 
 import java.util.List;
 
+/**
+ *Recycler中使用DataBinding
+ */
+
 public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecyclerAdapter.SamplesViewHolder> {
     private final Activity activity;
     private final List<Sample> samples;
